@@ -10,6 +10,7 @@ const formAsunto = document.querySelector('#asunto');
 const formMsg = document.querySelector('#mensaje');
 const btnEnviar = document.querySelector('#enviar');
 const btnCancelar = document.querySelector('#cancelar');
+const bienvenida = document.querySelector('.bienvenida');
 
 
 const contenidoForm = {
@@ -20,6 +21,15 @@ const contenidoForm = {
 }
 
 // eventos
+document.addEventListener('DOMContentLoaded',() => {
+    setTimeout(() => {
+        container.classList.remove('blur')
+        bienvenida.remove()
+
+    }, 2000);
+    
+})
+
 imagen.forEach( img => {
     img.addEventListener('mouseover', () => {
         img.children[0].classList.add('blur');
@@ -45,7 +55,9 @@ buttons.forEach(btn => {
 btnMsg.addEventListener('click', ()=> {
     container.classList.toggle('hidden');
     form.classList.toggle('hidden');
+
 })
+
 
 // form control
 formName.addEventListener('blur', verificar);
@@ -144,7 +156,12 @@ function enviar() {
         }, 2000);
 
     }, 1500);
-
     
 
+}
+
+btnCancelar.onclick = function (e) {
+    e.preventDefault()
+    form.classList.add('hidden');
+    container.classList.remove('hidden');
 }

@@ -23,6 +23,12 @@
   margin-top: 6px;
 }
 
+.position_ab {
+  position: absolute;
+  top: 0;
+  left: 0vw;
+}
+
 .btn {
   text-transform: uppercase;
   font-size: 20px;
@@ -34,8 +40,9 @@
   align-items: center;
   justify-content: space-around;
   font-weight: bolder;
+  background: linear-gradient(#808080 0%, #23232F 50%, #23232F 100%);
   border: 1px solid #808080;
-  color: #808080;
+  color: rgba(128, 128, 128, 0.4666666667);
   width: 240px;
   box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.4666666667);
 }
@@ -210,6 +217,24 @@ a {
   gap: 10px;
   width: 100%;
   margin: 40px 0;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bienvenida source, .bienvenida img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px #CAB7FF;
 }
 
 .contenedor_info::-webkit-scrollbar,
