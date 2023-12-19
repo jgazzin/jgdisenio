@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded',() => {
         container.classList.remove('blur')
         bienvenida.remove()
 
-    }, 2000);
+    }, 3000);
     
 })
 
