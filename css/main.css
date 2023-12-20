@@ -127,7 +127,7 @@
 
 .form-select {
   background: transparent;
-  color: rgba(128, 128, 128, 0.4666666667);
+  color: #808080;
 }
 .form-select option {
   color: #23232F;
@@ -439,6 +439,9 @@ footer {
   padding: 2px;
   position: fixed;
   bottom: 0;
+}
+footer p {
+  font-size: 12px;
 }
 
 .msg {
