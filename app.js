@@ -1,6 +1,6 @@
 // variables
 const imagen = document.querySelectorAll('.imagen');
-const buttons= document.querySelectorAll('.btn');
+const buttons = document.querySelectorAll('.contenedor_info .btn');
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
 const btnMsg = document.querySelector('.msg');
@@ -11,6 +11,7 @@ const formMsg = document.querySelector('#mensaje');
 const btnEnviar = document.querySelector('#enviar');
 const btnCancelar = document.querySelector('#cancelar');
 const bienvenida = document.querySelector('.bienvenida');
+const contenedorForm = document.querySelector('form')
 
 
 const contenidoForm = {
@@ -136,8 +137,7 @@ function habilitarBtn (form) {
 };
 
 function enviar() {
-    
-    const contenedorForm = document.querySelector('form')
+
     contenedorForm.classList.add('blur')
 
 
@@ -162,6 +162,19 @@ function enviar() {
 
 btnCancelar.onclick = function (e) {
     e.preventDefault()
+    contenedorForm.reset()
+    contenidoForm[nombre = '']
+    contenidoForm[email = '']
+    contenidoForm[asunto = '']
+    contenidoForm[mensaje = '']
+    
+    const alerta = contenedorForm.querySelectorAll('.alerta');
+    alerta.forEach( item => {
+        if (item) {
+            item.remove();
+        }
+    })
+    
     form.classList.add('hidden');
     container.classList.remove('hidden');
 }

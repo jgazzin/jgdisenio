@@ -285,7 +285,7 @@
         
         <div class="social">
             <div class="sociales d-flex gap-4">
-                <a href="mailto=j.gazzin@gmail.com"><i class="fa-regular fa-envelope fa-2xl" style="color: #cab7ff;"></i></a>
+                <a href="https://www.facebook.com/arqtic.disenio"><i class="fa-brands fa-facebook fa-2xl" style="color: #cab7ff;"></i></a>
                 <a href="https://wa.me/542944204936"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #cab7ff;"></i></a>
                 <a href="https://www.instagram.com/arqtic.disenio"><i class="fa-brands fa-instagram fa-2xl" style="color: #cab7ff;"></i></a>
             </div>
@@ -303,7 +303,7 @@
             <img src="img/perfil_ig.jpg">
         </picture> -->
         <h3 class="text-uppercase">jullieta gazzin</h3>
-        <h2 class="text-center text-uppercase">bienvenidos a mi portfolio</h2>
+        <h2 class="text-center text-uppercase">bienvenidos <br> a mi portfolio</h2>
     </div>
     
     <div class="msg">
@@ -311,7 +311,7 @@
     </div>
 
     <div class="form hidden">
-        <form method="post" action="https://formsubmit.co/j.gazzin@gmail.com" name="Formulario contacto jg.disenio">
+        <form method="post" action="enviar.php" name="form_jgdisenio">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
@@ -321,8 +321,15 @@
                 <input type="email" class="form-control" id="email" name="email">
             </div>
             <div class="mb-3">
+
                 <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="asunto" name="asunto">
+                
+                <select  class="form-select" aria-label="Default select example" name="asunto" id="asunto">
+                    <option value="consulta" selected>consulta</option>
+                    <option value="presupuesto">presupuesto</option>
+                </select>
+                
+                <!-- <input type="text" class="form-control" id="asunto" name="asunto"> -->
             </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensage</label>
