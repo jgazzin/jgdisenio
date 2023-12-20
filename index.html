@@ -311,7 +311,7 @@
     </div>
 
     <div class="form hidden">
-        <form method="post" action="enviar.php" name="form_jgdisenio">
+        <form method="post" action="https://formsubmit.co/j.gazzin@gmail.com" name="form_jgdisenio">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
@@ -325,7 +325,8 @@
                 <label for="asunto" class="form-label">Asunto</label>
                 
                 <select  class="form-select" aria-label="Default select example" name="asunto" id="asunto">
-                    <option value="consulta" selected>consulta</option>
+                    <option value="" desabled>Elegir Asunto</option>
+                    <option value="consulta">consulta</option>
                     <option value="presupuesto">presupuesto</option>
                 </select>
                 
@@ -333,7 +334,7 @@
             </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensage</label>
-                <textarea name="msg" id="mensaje" cols="30" rows="7" name="menaje"></textarea>
+                <textarea name="msg" id="mensaje" cols="25" rows="7" name="menaje"></textarea>
             </div>
 
             <div class="mb-3 div-btn">
@@ -347,8 +348,10 @@
     </div>
 
     <div class="msg_enviado hidden">
-        <h3 class="mb-5">Enviando mensaje...</h3>
-        <i class="fa-solid fa-circle-check fa-beat fa-2xl" style="color: #004d09;"></i>
+        <h3>Enviando mensaje... <br>
+            <i class="fa-solid fa-circle-check fa-beat fa-2xl mt-5" style="color: #004d09;"></i>
+        </h3>
+        
     </div>
 
     <footer>

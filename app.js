@@ -56,6 +56,7 @@ buttons.forEach(btn => {
 btnMsg.addEventListener('click', ()=> {
     container.classList.toggle('hidden');
     form.classList.toggle('hidden');
+    
 
 })
 
@@ -160,7 +161,7 @@ function enviar() {
 
 }
 
-btnCancelar.onclick = function (e) {
+btnCancelar.onclick = function resetForm (e) {
     e.preventDefault()
     contenedorForm.reset()
     contenidoForm[nombre = '']

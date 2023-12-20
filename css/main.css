@@ -462,9 +462,11 @@ footer {
 
 .msg_enviado {
   position: absolute;
-  top: 300px;
-  margin: 0 auto;
+  top: 200px;
   padding: 20px;
+  width: 100vw;
+}
+.msg_enviado h3 {
   text-align: center;
 }
 
